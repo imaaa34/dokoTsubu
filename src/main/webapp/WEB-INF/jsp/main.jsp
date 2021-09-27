@@ -34,7 +34,7 @@ String errorMsg = (String) request.getAttribute("errorMsg");
 <c:if test="${not empty errorMsg}">
 	<p>${errorMsg}</p>
 </c:if>
-<c:forEach var="mutter" items="${muterList}">
+<c:forEach var="mutter" items="${mutterList}">
 	<p><c:out value="${mutter.userName}" />:
 		<c:out value="${mutter.text}" /></p>
 </c:forEach>
